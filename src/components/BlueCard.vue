@@ -20,7 +20,7 @@ let hasSearchTerm = computed(() => {
 </script>
 
 <template>
-  <div v-if="this.hasSearchTerm" class="relative bg-blue-100 p-4 rounded-lg m-4 shadow-blue-200/50 shadow-md">
+  <div v-if="hasSearchTerm" class="relative bg-blue-100 p-4 rounded-lg m-4 shadow-blue-200/50 shadow-md">
     <h1 class="text-xl mb-5">{{ name }}</h1>
 
     <p class="whitespace-pre-line mb-5">{{ description }}</p>
