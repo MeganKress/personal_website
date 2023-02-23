@@ -43,10 +43,27 @@ let screenWidth = computed(() => {
      <span class="grid text-xl col-span-4 text-green-200">Projects</span>
   </div>
   <div class="grid sm:grid-cols-2 grid-cols-1">
-    <GreenCard name="LiDAR Voxel Generator" image="/livoxgen.png" description="LiVoxGen is a C++ program that 'voxelizes' LiDAR data by partitioning a LAS file into columns of volumetric pixels and counting the LiDAR points inside each voxel. It is hosted on GitHub." 
-      client="NASA" date="Spring 2015" service="Data Processing" url="http://megankress.github.io/LiVoxGen/#" />
-    <GreenCard name="The Living Breathing Forest" image="/sciday.png" description="This website corresponds to an interactive 30-minute activity at the 2017 GWIS Middle School Girls Math and Science Day."
-      client="GWIS Mid-Michigan Chapter" date="March 2017" service="Outreach" url="http://megankress.github.io/" />
+    <GreenCard name="COLE Interface" 
+      project_requirements="This is a project for Dr. Andy Finley’s research lab. The goal is to create a tool to be used by people in the forestry field to access Forest Inventory & Analysis (FIA) data." 
+      approach="I created an interactive map and forms for users to select their desired span of information. I used an existing library to interact with the FIA API." 
+      code="https://github.com/MeganKress/cole_interface" 
+      technology_stack="R and R Shiny (HTML and JavaScript)" 
+      date="December 2021 - present" 
+      url="http://147.182.132.240:3838/cole_interface/" />
+    <GreenCard name="Personal Website" 
+      project_requirements="My goal was to create a portfolio site with an interactive VueJS element. I also wanted to provide coding resources to the community." 
+      approach="I used Tailwind for formatting and Vue for different card components. I also used Vue for an interactive search feature under the Resources section." 
+      code="https://github.com/MeganKress/personal_website" 
+      technology_stack="HTML, VueJS, Tailwind" 
+      date="October 2022 - present" 
+      url="http://megankress.com" />
+    <GreenCard name="LiDAR Voxel Generator (LiVoxGen)" 
+      project_requirements="LiVoxGen is a C++ program that “voxelizes” LiDAR data by partitioning a LAS file into columns of volumetric pixels and counting the LiDAR points inside each voxel. This was a graduate school research project." 
+      approach="I used the libLAS library for reading in the three-dimensional points. I then used a feature of the library to draw a sphere around the voxel in order to increase efficiency in counting the actual number of points within the voxel. I used a kd-tree library for faster 3-dimensional searching." 
+      code="https://github.com/MeganKress/LiVoxGen" 
+      technology_stack="C++" 
+      date="2015" 
+      url="http://megankress.github.io/LiVoxGen/" />
   </div>
 
   <div class="w-full bg-slate-500 grid grid-cols-8 p-4 mt-10" id="resources">

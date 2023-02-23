@@ -3,9 +3,11 @@ import { ref } from 'vue'
 
 defineProps({
   name: String,
-  description: String,
   image: String,
-  client: String,
+  project_requirements: String,
+  approach: String,
+  code: String,
+  technology_stack: String,
   date: String,
   service: String,
   url: String
@@ -17,13 +19,11 @@ defineProps({
   <div class="bg-green-200 p-4 rounded-lg m-4 shadow-green-300/50 shadow-md">
     <h1 class="text-xl">{{ name }}</h1>
 
-    <img :src="image" class="bg-white p-3 rounded-lg flex mx-auto mt-8 mb-8 h-40">
-
-    <p class="whitespace-pre-line">{{ description }}</p>
-
-    <p class="whitespace-pre-line mt-5"><span class="font-bold">Client: </span>{{ client }}</p>
+    <p class="whitespace-pre-line mt-5"><span class="font-bold">Project Requirements: </span>{{ project_requirements }}</p>
+    <p class="whitespace-pre-line mt-1"><span class="font-bold">Approach: </span>{{ approach }}</p>
+    <p class="whitespace-pre-line mt-1"><span class="font-bold">Code: </span><a :href="code" class="underline text-m hover:text-green-500 mt-5" target="_blank" v-if="code">GitHub</a></p>
+    <p class="whitespace-pre-line mt-1"><span class="font-bold">Technology Stack: </span>{{ technology_stack }}</p>
     <p class="whitespace-pre-line mt-1"><span class="font-bold">Date: </span>{{ date }}</p>
-    <p class="whitespace-pre-line mt-1 mb-5"><span class="font-bold">Service: </span>{{ service }}</p>
     
     <a :href="url" class="underline text-m hover:text-green-500 mt-5" target="_blank" v-if="url">Visit Site</a>
   </div>
