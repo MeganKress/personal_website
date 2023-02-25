@@ -24,7 +24,7 @@ let screenWidth = computed(() => {
     <span class="grid text-xl uppercase md:col-span-4 col-span-1 text-yellow-200">Megan Kress</span>
     <a href="#about"><span class="text-white uppercase text-center col-span-1 hover:font-bold hover:text-yellow-200 hover:cursor-pointer">About</span></a>
     <a href="#projects"><span class="text-white uppercase text-center col-span-1 hover:font-bold hover:text-yellow-200 hover:cursor-pointer">Projects</span></a>
-    <a href="#resources"><span class="text-white uppercase text-center col-span-1  hover:font-bold hover:text-yellow-200 hover:cursor-pointer">Coding Resources</span></a>
+    <a href="#resources"><span class="text-white uppercase text-center col-span-1  hover:font-bold hover:text-yellow-200 hover:cursor-pointer">Resources</span></a>
     <a href="#contact"><span class="text-white uppercase text-center col-span-1 hover:font-bold hover:text-yellow-200 hover:cursor-pointer">Contact</span></a>
   </div>
 
